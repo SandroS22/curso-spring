@@ -1,4 +1,4 @@
-package com.github.sandros22.cursospring;
+package com.github.sandros22.cursospring.helloworld;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -39,12 +39,12 @@ public class HelloWorldConfiguration {
 	public Person person3Parameters(String name, int age, Address address3) {
 		return new Person(name, age, address3);
 	}
-	
+
 	@Bean
 	public Person person4Parameters(String name, int age, Address address) {
 		return new Person(name, age, address);
 	}
-	
+
 	@Bean
 	public Person person5QualifierParameters(String name, int age, @Qualifier("address3Qualifier") Address address) {
 		return new Person(name, age, address);

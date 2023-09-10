@@ -1,6 +1,4 @@
-package com.github.sandros22.cursospring;
-
-import java.util.Arrays;
+package com.github.sandros22.cursospring.helloworld;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -19,7 +17,7 @@ public class App02HelloWorldSpring {
 		System.out.println(context.getBean("person5QualifierParameters"));
 //		System.out.println("All beans");
 //		Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
-//		context.close();
+		context.close();
 	}
 
 }
