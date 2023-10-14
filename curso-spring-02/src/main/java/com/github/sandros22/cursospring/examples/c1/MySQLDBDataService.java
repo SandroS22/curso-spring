@@ -1,8 +1,8 @@
 package com.github.sandros22.cursospring.examples.c1;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+@Repository
 public class MySQLDBDataService implements DataService {
 
 	@Override
